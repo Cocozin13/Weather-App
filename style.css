@@ -1,0 +1,118 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-size: cover;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px white;
+}
+
+/*Main Styling*/
+
+.mainDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tempSwitchDiv {
+    position: relative;
+    align-self: flex-end;
+    top: 20px;
+    right: 5%;
+}
+
+.CToF {
+    cursor: pointer;
+    padding: 12px 34px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    border-radius: 4px;
+}
+
+.searchDiv {
+    position: relative;
+    align-self: flex-start;
+    left: 5%;
+}
+
+#searchBar {
+    font-size: 25px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.mainData {
+    position: relative;
+    align-self: flex-start;
+    left: 5%;
+    top: 15px;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 20px 22px;
+    background-color: rgba(255, 255, 255, .4);
+    box-shadow: 3px 4px 4px black;
+}
+
+.feelsLikeDiv {
+    position: relative;
+    top: 12px;
+}
+.otherStats {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    position: relative;
+    align-self: flex-end;
+    bottom: 240px;
+    margin-right: 50px;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 10px 16px;
+    background-color: rgba(255, 255, 255, .4);
+    box-shadow: 3px 4px 4px black;
+}
+
+.dataText svg {
+    width: 40px;
+    height: 40px;
+}
+
+.dataText h1 {
+    display: inline;
+    margin-left: 10px;
+}
+
+@media (max-width: 760px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .searchDiv {
+        top: 35px;
+    }
+
+    .mainData  {
+        top: 50px;
+        margin-left: 18px;
+    }
+
+    .otherStats {
+        margin-left: 40px;
+        top: 70px;
+    }
+}
